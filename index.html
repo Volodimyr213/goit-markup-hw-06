@@ -439,18 +439,22 @@
 
           </ul>
         </div>
-        <form class="footer-form">
-          <label class="footer-lable">Подпешитесь на рассылку
-            <input class="footer-input" type="email" placeholder=" E-mail" name="usar-email"></input>
-          </label>
-        
 
-        <button class="footer-button" type="submit">Подписаться
-          <svg class="footer-bt-icon" width="24px" height="24px">
-            <use href="./images/icons.svg#icon-icon-send"></use>
-          </svg>
-        </button>
+        <Div class="footer-field">
+        
+          <p class="footer-field__title">Подпешитесь на рассылку </p>
+         
+          <form class="footer-field__form">
+          
+            <input class="footer-field__input" type="email" placeholder=" E-mail" name="usar-email"></input>
+         
+            <button class="footer-field__button" type="submit">Подписаться
+               <svg class="footer-field__icon" width="24px" height="24px">
+                  <use href="./images/icons.svg#icon-icon-send"></use>
+               </svg>
+            </button>
         </form>
+      </Div>
 
 
     </div>
@@ -467,10 +471,14 @@
 
           </svg>
         </button>
+
+        <!-- ФОРНА -->
+
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+
         <form class="form-modal">
          
-         <div class="modal-field" > 
+         <div> 
           <label for="modal-input" class="label-text">Имя</label>
 
             <div class="input-wrap">
@@ -499,14 +507,15 @@
                 <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
              </svg> 
               </div>
-          
-        </div>
+           </div>
 
-          <label class="label-text"> Комментарий
-            <textarea class="modal-text" name="modal-text" placeholder="Введите текст" ></textarea>
+           <div class="modal-field" > 
+               <label class="label-text" for="modal-text"> Комментарий</label> 
+               <textarea class="modal-text" name="modal-text" id="modal-text" placeholder="Введите текст" ></textarea>
+          </div>
 
          
-          <div class="modal-field">
+          <div class="modal-chekbox">
               
               <input
                 class="input-chekt visually-hidden" 
@@ -516,18 +525,15 @@
                >
               </input> 
               <label for="user-consent" class="chekt-text">
-                   <Span>
+                   <Span class="modal-chekbox__icon">
                       <svg class="chekt-input" width="11px" height="8px">
                         <use href="./images/icons.svg#icon-Chekt"></use>
                       </svg>
                     </Span>
-                    Соглашаюсь с рассылкой и принимаю&nbsp; <a>Условия договора</a>
-              </label> 
+                    Соглашаюсь с рассылкой и принимаю&nbsp;<a>Условия договора</a>
+              
             </div>
               
-
-             
-
           <button type="submit" class="modal-button">Отправить</button>
 
         </form>
